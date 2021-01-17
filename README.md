@@ -10,15 +10,23 @@ GUI for field selection and writting. All final numerical data produced is plott
 <img src="img/demo.png" width=800>
 
 ## Usage
-To use, select each field and filled with the desired information:
-`f`: function expression to plot (C++ syntax). Extra functions can be added with `+`
+To use, select each field and fill it with the desired information:
+
+`f`: function expression to plot (C/C++ syntax). Extra functions can be added with `+`
+
 `var`: the variable name (usually `x`)
+
 `cte`: constants name and value, written as `cte_name = cte_val`. Extra constants can be added with `+`
-`x_min`: Minimum value of `var` to calculate
-`x_max`: Maximum value of `var` to calculate
-`y_min`: Minimum value of `f(var)` to display in the plot
-`y_max`: Maximum value of `f(var)` to display in the plot
-`nPts`: Number of points to calculate in the interval `[x_min, x_max]`
+
+`x_min`: Bottom value of `var` to calculate
+
+`x_max`: Top value of `var` to calculate
+
+`y_min`: Bottom value of `f(var)` to display in the plot
+
+`y_max`: Top value of `f(var)` to display in the plot
+
+`nPts`: Number of points to calculate within the interval `[x_min, x_max]`
 
 ## Install
 The makefile attached provides all flags for compilation, considering Linux OS, 
